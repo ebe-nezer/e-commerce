@@ -17,8 +17,8 @@
   "scripts": {
     "start": "nodemon server",
     "client": "yarn start --prefix client",
-    "dev": "concurrently \" yarn start\" \"    yarn run client\"",
-    "build": "yarn install --prefix client && yarn run build --prefix client"
+    "dev": "concurrently \" yarn start\" \" yarn run client\"",
+    "build": "cd client && yarn install && yarn run build"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
